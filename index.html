@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador Password</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/pengui.ico" type="image/x-icon">
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="logo">
+            <img src="img/pengui.png" alt="" srcset="">
+        </div>
+        <form action="" class="app" id="app">
+            <!--Número de Caracteres-->
+            <div class="fila numero-caracter">
+                <div class="col">
+                    <label for="numero-caracter">Número de Caracteres</label>
+                </div>
+                <div class="col botones">
+                    <div>
+                        <button class="btn" id="btn-menos">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <input type="text" name="" class="numero-caracter" id="numero-caracter" readonly value="12">
+                    </div>
+                    <div>
+                        <button class="btn" id="btn-menos">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Incluir Simbolos-->
+            <div class="fila simbolo">
+                <div class="col">
+                    <label for="simbolo">¿Quiere incluir Simbolo?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-simbolo">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <!--Incluir Números-->
+            <div class="fila numero">
+                <div class="col">
+                    <label for="numero">¿Quiere incluir Número?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-numero">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <!--Incluir Mayúsculas-->
+            <div class="fila mayuscula">
+                <div class="col">
+                    <label for="mayuscula">¿Quiere incluir Mayuscula?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-mayuscula">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <!--Botón Generar-->
+            <div class="fila generar">
+                <div class="col">
+                    <button class="btn btn-generar" id="btn-generar">
+                        Generar <i class="fas fa-lock"></i>
+                    </button>
+                </div>
+                <div class="col">
+                    <input type="text" name="" class="input-password" id="input-password" readonly value="T3Se0">
+                </div>
+            </div>
+
+            <!--Alerta-->
+            <div class="fila alarma">
+                <div class="col">
+                    <div class="alerta-copi" id="alerta-copi">
+                        <p><i class="fas fa-copy"></i> Texto Copiado</p>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

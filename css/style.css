@@ -1,0 +1,211 @@
+/* ---------------------------- Estilos Generales --------------------------- */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 20px;
+}
+
+*::selection{
+    background: #1F618D;
+    color: #fff;
+}
+
+/* -------------------------- Estilos Tradicionales ------------------------- */
+body{
+    background: #154360;
+    color: #fff;
+}
+
+.contenedor{
+    max-width: 500px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* ------------------------------- Estilo Logo ------------------------------ */
+.logo{
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo img{
+    width: 100%;
+    vertical-align: text-top;
+}
+
+/* ----------------------------- Estilo de Filas ---------------------------- */
+.app .fila{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app .col{
+    width: 100%;
+}
+
+/* ------------------------- Estilos Botones Inputs ------------------------- */
+.app .label{
+    line-height: 40px;
+}
+
+.app input{
+    text-align: center;
+    border: none;
+}
+
+.app .btn{
+    width: 100%;
+    background: #2980B9;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.app .btn:hover{
+    background: #7FB3D5;
+}
+
+/* ------------------------- Fila Numero Caracteres ------------------------- */
+.app .numero-caracter .botones div{
+    width: 100%;
+}
+
+.app .numero-caracter .botones div:nth-child(1) button{
+    border-radius: 4px 0 0 4px;
+}
+.app .numero-caracter .botones div:nth-child(3) button{
+    border-radius: 0 4px 4px 0;
+}
+
+.app .numero-caracter input{
+    height: 40px;
+    cursor: default;
+    width: 100%;
+    background: #1F618D;
+    color: #fff;
+}
+.app .numero-caracter .botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* ----------------------------- Generar Codigo ----------------------------- */
+.app .fila.generar{
+    margin-bottom: 10px;
+}
+
+.app .fila.generar .col:nth-child(1){
+    width: 30%;
+}
+.app .fila.generar .col:nth-child(2){
+    width: 65%;
+}
+.app .fila.generar .btn.btn-generar{
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    position: relative;
+    padding: 0;
+    line-height: 40px;
+}
+.app .fila.generar .btn.btn-generar i{
+    font-size: 14px;
+    position: relative;
+    margin-left: 12;
+    top: -1;
+}
+
+.app .fila.generar .btn.btn-generar::after{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: #2980B9;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 13px;
+    transition: all .3s ease;
+    right: -7px;
+}
+.app .fila.generar:hover .btn.btn-generar::after{
+    background: #7FB3D5;
+}
+
+.app .fila.generar .input-password{
+    width: 100%;
+    border-radius: 4px;
+    background: none;
+    color: #fff;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    line-height: 40px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.app .fila.generar .input-password:hover{
+    border: 1px solid rgba(255, 255, 255, .25);
+}
+
+.app .fila.generar .input-password::selection{
+    background: #154360;
+}
+
+/* ------------------------------- Fila Alerta ------------------------------ */
+.app .fila.alarma {
+    justify-content: flex-end;
+}
+
+.app .fila.alarma .col{
+    width: 65%;
+}
+.app .fila.alarma .alerta-copi{
+    text-align: center;
+    transition: all .3s ease;
+    color: rgba(255, 255, 255, 1);
+}
+
+.app .fila.alarma .alerta-copi p,
+.app .fila.alarma .alerta-copi i{
+    font-size: 12px;
+}
+
+/* ---------------------------- ADAPTADO A MOVIL ---------------------------- */
+@media screen and (max-width: 500px){
+    .app .fila{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .app .fila .col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .app .fila.generar{
+        border-top: 1px solid rgba(255, 255, 255, .25);
+        padding-top: 40px;
+    }
+    .app .fila.generar .col:nth-child(1),
+    .app .fila.generar .col:nth-child(2){
+        width: 100%;
+    }
+
+    .app .fila.generar .btn.btn-generar::after{
+        top: auto;
+        left: 50%;
+        right: 50%;
+        bottom: -7px;
+    }
+
+}
