@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generador Password</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="font/css/all.min.css" />
     <link rel="shortcut icon" href="img/pengui.ico" type="image/x-icon">
-    <link rel="stylesheet" href="font/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="contenedor">
         <div class="logo">
-            <img src="img/pengui.png" alt="" srcset="">
+            <img src="img/pengui.png" alt="" srcset="" />
         </div>
         <form action="" class="app" id="app">
-            <!--Número de Caracteres-->
+            <!--Numero de Caracteres-->
             <div class="fila numero-caracter">
                 <div class="col">
-                    <label for="numero-caracter">Número de Caracteres</label>
+                    <label for="numero-caracter">Número de Caracteres:</label>
                 </div>
                 <div class="col botones">
                     <div>
@@ -27,10 +29,10 @@
                         </button>
                     </div>
                     <div>
-                        <input type="text" name="" class="numero-caracter" id="numero-caracter" readonly value="12">
+                        <input type="text" name="" id="numero-caracter" class="numero-caracter" readonly value="12" />
                     </div>
                     <div>
-                        <button class="btn" id="btn-menos">
+                        <button class="btn" id="btn-mas">
                             <i class="fas fa-plus"></i>
                         </button>
                     </div>
@@ -39,18 +41,18 @@
             <!--Incluir Simbolos-->
             <div class="fila simbolo">
                 <div class="col">
-                    <label for="simbolo">¿Quiere incluir Simbolo?</label>
+                    <label for="simbolo">¿Incluir Simbolos?</label>
                 </div>
                 <div class="col">
-                    <button class="btn" id="btn-simbolo">
+                    <button class="btn" id="btn-simbolos">
                         <i class="fas fa-check"></i>
                     </button>
                 </div>
             </div>
-            <!--Incluir Números-->
+            <!--Incluir Numeros-->
             <div class="fila numero">
                 <div class="col">
-                    <label for="numero">¿Quiere incluir Número?</label>
+                    <label for="numero">¿Incluir Números?</label>
                 </div>
                 <div class="col">
                     <button class="btn" id="btn-numero">
@@ -58,10 +60,10 @@
                     </button>
                 </div>
             </div>
-            <!--Incluir Mayúsculas-->
+            <!--Incluir Mayusculas-->
             <div class="fila mayuscula">
                 <div class="col">
-                    <label for="mayuscula">¿Quiere incluir Mayuscula?</label>
+                    <label for="mayuscula">¿Incluir Mayúsculas?</label>
                 </div>
                 <div class="col">
                     <button class="btn" id="btn-mayuscula">
@@ -77,20 +79,20 @@
                     </button>
                 </div>
                 <div class="col">
-                    <input type="text" name="" class="input-password" id="input-password" readonly value="T3Se0">
+                    <input type="text" name="" class="input-password" id="input-password" readonly value="T3sE@" />
                 </div>
             </div>
-
-            <!--Alerta-->
-            <div class="fila alarma">
+            <!--Alerta Texto Copiado-->
+            <div class="fila alerta">
                 <div class="col">
                     <div class="alerta-copi" id="alerta-copi">
                         <p><i class="fas fa-copy"></i> Texto Copiado</p>
                     </div>
                 </div>
             </div>
-
         </form>
     </div>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
