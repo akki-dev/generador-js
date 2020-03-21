@@ -6,11 +6,8 @@ Los derechos a su debido autor, hice una replica a base de lo que eh aprendido.
 Colores:
 <br>
 - #154360
-<br>
 - #1F618D
-<br>
 - #2980B9
-<br>
 - #7FB3D5
 <br>
 COMPOSICION:
