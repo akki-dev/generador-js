@@ -202,7 +202,7 @@ body {
     font-size: 12px;
 }
 
-/* --------------------------- Estilos Media Query -------------------------- */
+/* --------------------------- Estilos Media Query  -------------------------- */
 @media screen and (max-width: 500px) {
     .logo img {
         width: 70%;
